@@ -1,6 +1,6 @@
 {
-  "title": "Installing Rancher 2.x",
-  "description": "Getting started with Rancher 2.x with a management server and single node cluster",
+  "title": "Rancher with K3s",
+  "description": "Getting started with Rancher 2.x with a management server and single node k3s cluster",
   "details": {
     "steps": [
       {
