@@ -11,5 +11,10 @@ First, we will start the Rancher Server container.
 
 `docker run -d -p 80:80 -p 443:443 rancher/rancher:master`{{execute HOST1}}
 
-Render port 443: https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
+Wait for a minute and then try to access the host on the following URL:
+https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
+
+If you get prompted for a port type 443
+
+After this set the password and accept the Rancher Server URL.
 
