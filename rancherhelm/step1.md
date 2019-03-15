@@ -9,7 +9,7 @@ First we need to download this tool and make it executable:
 
 `curl -sfL https://github.com/rancher/rke/releases/download/v0.1.17/rke -o rke && chmod +x ./rke`{{execute HOST1}}
 
-We are then going to take advantage of an RKE setting that allows us to spin up a cluster on the local machine without creating any additional config. For further information and examples on use RKE to set up a production installation of Kubernetes please visit https://rancher.com/docs/rke/v0.1.x/en/installation/
+We are then going to take advantage of an RKE setting that allows us to spin up a cluster on the local machine without creating any additional config. For further information and examples on using RKE to set up a production installation of Kubernetes please visit https://rancher.com/docs/rke/v0.1.x/en/installation/
 
 `./rke up --local`{{execute HOST1}}
 

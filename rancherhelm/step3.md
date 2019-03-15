@@ -1,7 +1,7 @@
 #Install Rancher Server
 
 First we need to add the helm repo that contains the Rancher chart
-`helm repo add rancher-latest https://releases.rancher.com/server-charts/latest`
+`helm repo add rancher-latest https://releases.rancher.com/server-charts/latest`{{execute HOST1}}
 
 Next we are going to install cert-manager
 `helm install stable/cert-manager \
@@ -13,7 +13,7 @@ And finally we are going to install the Rancher Server into the cluster
   `helm install rancher-latest/rancher \
   --name rancher \
   --namespace cattle-system \
-  --set hostname=[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com`{{execute HOST1}}
+  --set hostname=[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com`
 
 Wait for a minute and then try to access the host on the following URL:
 https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/
