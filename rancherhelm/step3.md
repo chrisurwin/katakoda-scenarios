@@ -13,7 +13,7 @@ And finally we are going to install the Rancher Server into the cluster
   `helm install rancher-latest/rancher \
   --name rancher \
   --namespace cattle-system \
-  --set hostname=[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com`
+  --set hostname=[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com`{{execute HOST1}}
 
 Wait for a minute and then try to access the host on the following URL:
 https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/
