@@ -16,7 +16,7 @@ We are then going to take advantage of an RKE setting that allows us to spin up 
 
 `./rke up --local`{{execute HOST1}}
 
-This will produce a `kube_config_cluster.yml` file in the local directory , we are going to copy this to -p /root/.kube/config so that we can use it to connect to the cluster via `kubectl`
+This will produce a `kube_config_cluster.yml` file in the local directory , we are going to copy this to `/root/.kube/config` so that we can use it to connect to the cluster via `kubectl`
 
 `mkdir -p /root/.kube`{{execute HOST1}}
 `cp kube_config_cluster.yml ~/.kube/config`{{execute HOST1}}
