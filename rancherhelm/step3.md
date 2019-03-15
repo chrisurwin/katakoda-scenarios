@@ -25,9 +25,8 @@ Congratulations you have just installed Rancher with Helm!
 As an additional step you can now add a child cluster to the Rancher Server by doing the following
 
 * In the Rancher UI, click `Add Cluster`
-* Click `Import existing cluster` and give it a name and click `create`
+* Click `custom` and give it a name and click `create`
 
-* Copy the kubectl command at the bottom of the page and execute it on Host 2, then click `Done`
-
+* Check the `etcd` and `control plane` checkboxes and copy the `docker run` command at the bottom of the page and execute it on Host 2, then click `Done`
 
 * Go back to the Rancher UI and you should see the cluster available in the Rancher Server UI
